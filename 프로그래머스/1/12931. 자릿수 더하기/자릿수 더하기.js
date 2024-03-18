@@ -2,7 +2,8 @@ function solution(n)
 {
     var answer = 0;
     
-    for(let i=0; i<9; i++) {
+    let ex = n.toString().length;
+    for(let i=0; i< ex; i++) {
         answer += n % 10;
         n = Math.floor(n / 10);
     }
